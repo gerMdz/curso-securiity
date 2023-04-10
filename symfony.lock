@@ -106,9 +106,6 @@
     "fakerphp/faker": {
         "version": "v1.13.0"
     },
-    "friendsofphp/proxy-manager-lts": {
-        "version": "v1.0.3"
-    },
     "gedmo/doctrine-extensions": {
         "version": "v2.4.41"
     },
@@ -117,9 +114,6 @@
     },
     "knplabs/knp-time-bundle": {
         "version": "v1.11.0"
-    },
-    "laminas/laminas-code": {
-        "version": "4.0.0"
     },
     "laminas/laminas-eventmanager": {
         "version": "3.3.0"
@@ -284,9 +278,6 @@
             "src/Kernel.php"
         ]
     },
-    "symfony/http-client-contracts": {
-        "version": "v2.3.1"
-    },
     "symfony/http-foundation": {
         "version": "v5.0.4"
     },
@@ -365,6 +356,18 @@
     },
     "symfony/runtime": {
         "version": "v5.3.4"
+    },
+    "symfony/security-bundle": {
+        "version": "5.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "98f1f2b0d635908c2b40f3675da2d23b1a069d30"
+        },
+        "files": [
+            "config/packages/security.yaml"
+        ]
     },
     "symfony/service-contracts": {
         "version": "v2.0.1"
