@@ -120,4 +120,4 @@ us do what we love!
 ### Cap 1
 
 ### Next
-[Cap 2](https://symfonycasts.com/es/screencast/symfony-security/make-user#play)
+[Cap 3](https://symfonycasts.com/es/screencast/symfony-security/user-entity#play)
