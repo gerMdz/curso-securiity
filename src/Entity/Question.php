@@ -11,55 +11,43 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
-/**
- * @ORM\Entity(repositoryClass=QuestionRepository::class)
- */
+#[ORM\Entity(repositoryClass: QuestionRepository::class)]
 class Question
 {
     use TimestampableEntity;
 
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+
+    #[ORM\Column(type: 'string',  length:255)]
     private $name;
 
-    /**
-     * @ORM\Column(type="string", length=100, unique=true)
-     * @Gedmo\Slug(fields={"name"})
-     */
+
+    #[ORM\Column(type:"string", length:100, unique:true )]
+    #[Gedmo\Slug(fields: ['name'])]
     private $slug;
 
-    /**
-     * @ORM\Column(type="text")
-     */
+    #[ORM\Column(type: 'text')]
     private $question;
 
-    /**
-     * @ORM\Column(type="datetime", nullable=true)
-     */
+
+     #[ORM\Column(type:"datetime", nullable:true)]
+
     private $askedAt;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
+     #[ORM\Column(type:"integer")]
     private $votes = 0;
 
-    /**
-     * @ORM\OneToMany(targetEntity=Answer::class, mappedBy="question", fetch="EXTRA_LAZY")
-     * @ORM\OrderBy({"createdAt" = "DESC"})
-     */
+     #[ORM\OneToMany(mappedBy: "question", targetEntity: Answer::class, fetch: "EXTRA_LAZY")]
+     #[ORM\OrderBy(["createdAt"=>"DESC"])]
+
     private $answers;
 
-    /**
-     * @ORM\OneToMany(targetEntity=QuestionTag::class, mappedBy="question")
-     */
+
+    #[ORM\OneToMany(mappedBy: "question", targetEntity: QuestionTag::class)]
     private $questionTags;
 
     public function __construct()

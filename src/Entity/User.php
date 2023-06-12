@@ -9,6 +9,7 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
+#[ORM\Table(name: "Users")]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -24,6 +25,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type: 'string')]
     private $password;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $nombre = null;
 
     public function getId(): ?int
     {
@@ -112,5 +116,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getNombre(): ?string
+    {
+        return $this->nombre;
+    }
+
+    public function setNombre(?string $nombre): self
+    {
+        $this->nombre = $nombre;
+
+        return $this;
     }
 }
