@@ -120,4 +120,4 @@ us do what we love!
 ### Cap 1
 
 ### Next
-[Cap 4](https://symfonycasts.com/es/screencast/symfony-security/login-form#play)
+[Cap 7](https://symfonycasts.com/es/screencast/symfony-security/user-query-credentials#play)
