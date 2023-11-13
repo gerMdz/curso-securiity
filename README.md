@@ -121,3 +121,5 @@ us do what we love!
 
 ### Next
 [Cap 7](https://symfonycasts.com/es/screencast/symfony-security/user-query-credentials#play)
+
+(Atento al capítulo 9, porque tiene cambios)
