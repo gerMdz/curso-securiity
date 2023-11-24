@@ -120,6 +120,6 @@ us do what we love!
 ### Cap 1
 
 ### Next
-[Cap 7](https://symfonycasts.com/es/screencast/symfony-security/user-query-credentials#play)
+[Cap 9](https://symfonycasts.com/es/screencast/symfony-security/auth-errors#play)
 
 (Atento al capítulo 9, porque tiene cambios)
