@@ -120,6 +120,4 @@ us do what we love!
 ### Cap 1
 
 ### Next
-[Cap 9](https://symfonycasts.com/es/screencast/symfony-security/auth-errors#play)
-
-(Atento al capítulo 9, porque tiene cambios)
+[Cap 10](https://symfonycasts.com/es/screencast/symfony-security/errors-logout#play)

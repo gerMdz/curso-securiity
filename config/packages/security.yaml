@@ -1,5 +1,11 @@
 security:
     enable_authenticator_manager: true
+
+#    Si queremos avisar que el correo o la contraseña están equivocados en lugar de un genérico
+#    ¡Ojo! Solo usar si lo piden es mejor no avisar qué es lo que está fallando
+#    hide_user_not_found: false
+
+
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
