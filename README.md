@@ -120,4 +120,4 @@ us do what we love!
 ### Cap 1
 
 ### Next
-[Cap 10](https://symfonycasts.com/es/screencast/symfony-security/errors-logout#play)
+[Cap 13](https://symfonycasts.com/es/screencast/symfony-security/csrf-token#play)
