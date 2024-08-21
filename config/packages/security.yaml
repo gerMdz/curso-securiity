@@ -24,6 +24,8 @@ security:
             provider: app_user_provider
             custom_authenticator: App\Security\LoginFormAuthenticator
             logout: true
+            remember_me:
+                    secret: '%kernel.secret%'
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
