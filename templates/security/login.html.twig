@@ -7,10 +7,10 @@
         <div class="row">
             <div class="login-form bg-light mt-4 p-4">
                 <form method="post" class="row g-3">
-                    <h1 class="h3 mb-3 font-weight-normal">Ingreso</h1>
+                    <h4 class="h3 mb-3 font-weight-normal p-2">Ingreso</h4>
                     {% if error %}
                         <div class="alert alert-danger">
-                            {{ error.messageKey | trans(error.messageData, 'security', 'es')}}
+                            {{ error.messageKey | trans(error.messageData, 'security', 'es') }}
                         </div>
                     {% endif %}
 
@@ -22,6 +22,14 @@
                         <label for="inputPassword">Password</label>
                         <input type="password" name="password" id="inputPassword" class="form-control" required>
                     </div>
+
+{#                    <div class="form-check mb-3">#}
+{#                        <label for="_remember_me">#}
+{#                            <input type="checkbox" name="_remember_me" id="_remember_me" class="form-check-input">#}
+{#                            Recuérdame#}
+{#                        </label>#}
+
+{#                    </div>#}
                     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
                     <div class="col-12">
